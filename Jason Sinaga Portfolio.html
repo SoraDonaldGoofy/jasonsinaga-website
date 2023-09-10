@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Welcome to Jason Sinaga's Portfolio!
+        </title>
+        <meta name="author" content="Jason Sinaga"></meta>
+        <meta name="keywords" content="Computer Architecture, Computer Engineering"></meta>
+        <link rel="stylesheet" href="myStyle.css"></link>
+        <link rel="icon" type="image/x-icon" href="favicon.ico"></link>
+    </head>
+    <body>
+        <div class="topnav">
+            <a href="https://github.com/SoraDonaldGoofy" target="_blank" rel="noreferrer noopener"><img src="Invertocat-White.png" width="40"></img></a>
+            <a href="https://www.linkedin.com/feed/" target="_blank" rel="noreferrer noopener"><img src="LI-In-Bug-White.png" width="40"></img></a>
+        </div>
+        
+        
+        <div class="Intro">
+        <p class="Micro">Welcome to my page! I'm</p>
+        <h1>Jason Sinaga</h1>
+        <h2>A current student at UW-Madison taking <br>Computer Engineering and Computer Science.<br> Here's a showcase of 
+            <a class="scroll" onClick="document.getElementById('panel').scrollIntoView()">what I've been up to.</a></h2>
+    </div>
+
+    <div class="container" id="panel">
+        <div class="tabs">
+            <button onclick="openSkill(0, 'SystemVerilog')" class="active">SystemVerilog</button>
+            <button onclick="openSkill(1, 'Java')">Java</button>
+            <button onclick="openSkill(2, 'C')">C</button>
+            <button onclick="openSkill(3, 'LaTeX')">LaTeX</button>
+            <button onclick="openSkill(4, 'Python')">Python</button>
+            <button onclick="openSkill(5, 'MATLAB')">MATLAB</button>
+            <button onclick="openSkill(6, 'Teaching')">Teaching</button>
+        </div>
+
+    <!--The individual pages for each tab-->
+        <div class="tabcontent" id="SystemVerilog">
+            <h3>SystemVerilog</h3>
+            <h4>Segway</h4>
+                <h5>In a group of 3 and under the guidance of <a href="https://directory.engr.wisc.edu/ece/Faculty/Hoffman_Eric/" target="_blank" rel="noreferrer noopener">Professor Hoffman</a>, we developed a Segway. He instructed us in SystemVerilog and guided us in synthesis with Synopsys. 
+                We utilized Quartus to map it to a DE0-Nano. We developed modules for SPI, UART, Piezo, Integrator, A2D interface, and other minor components. Additionally, we tested these modules in ModelSim and ensured
+                that they met timing and size requirements.</h5>
+                
+                <div class="playVideo">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/VnbJ1m0QZk0" title="YouTube video player"
+                         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                         picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h5>Notable skills: Synthesis, Testing, Finite State Machines</h5>
+        </div>
+
+        <div class="tabcontent" id="Java">
+            <h3>Java</h3>
+                <h4>UW Student Database</h4>
+                <h5>In a group of 4, we implemented an application that allows users to access a database of students 
+                    with a Red Black Binary Tree implementation. The application allowed for importing, adding, removing, and
+                    searching UW Madison students based on their ID number. The data assocciated with each student are their
+                 names, majors, and years.</h5>
+        
+                <h4>Reddit Post Search Engine</h4>
+                <h5>In a group of 4, we implemented a search engine for Reddit posts by using a hashtable. 
+                    We used Linear Probing and Linked Lists for collision handling when storing posts 
+                    based on their words in their titles and body. Users can search for these posts by typing in
+                    the relevant key words. Users can also import reddit posts to store into the search engine.</h5>
+        
+                <h4>Subway Navigator App</h4>
+                <h5>Implemented an app with JavaFX that implemented Dijkstra's Algorithm to find the shortest path 
+                between two subway stations. Users can write down the starting point of their journey and their end point.
+                They will receive information on the stations they would need to pass by and also the associated cost.
+                Furthermore, users can also receive the map's Prim's Algorithm representation.</h5>
+
+                <h5>Notable skills: Git, Red Black Tree, Hashtables, Djikstra's Algorithm</h5>
+        </div>
+        <div class="tabcontent" id="C">
+            <h3>C</h3>
+                <h4>Key Hunter</h4>
+                <h5>Created a game with Tim R. Wang called Key Hunter. Used an MSP432P401R Launchpad and Development Kit that employed the joystick, buttons, 
+                accelerometer, light sensor, speaker, and LCD Display. The goal of the game is for the player to acquire all keys in each level. More levels will be unlocked as 
+                more levels are completed by the player. However, they need to avoid protruding spikes and patrolling enemies that can hurt the player.</h5>
+                <h4>Heap Allocator</h4>
+                <h5>Created a program that simulated memory allocation following the IA-32 architecture. Header and Footer blocks were incorporated and immediate splitting
+                    was done during memory allocation. Memory block coalescing was user-initiated.
+                </h5>
+                <div class="playVideo">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/iyXAPzcpq2Q" title="YouTube video player" 
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+                    picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <h5>Notable skills: Level Design, Character Design, Enemy Programming, Animation</h5>
+        </div>
+
+        <div class="tabcontent" id="Python">
+            <h3>Python</h3>
+            <h5>Created a GUI-based application that acts as an advanced cash register that uses the libraries openpyxl, xlsxwriter, and customtkinter. The app reads an excel file that 
+                loads the inventory. From the app, the user can add items, put items in the shopping cart and sell them, and generate a new excel report with the new inventory count. You 
+                can look at it <a href="https://github.com/SoraDonaldGoofy/LaTeX_Intro_Handout" 
+                target="_blank" rel="noreferrer noopener">here.</a></h5></h5>
+        </div>
+
+        <div class="tabcontent" id="LaTeX">
+            <h3>LaTeX</h3>
+            <h4>Intro to LaTeX handout</h4>
+                <h5>Created a handout that teaches beginners important notes about LaTeX for making mathematical documents (particularly for discrete
+                     math courses). A target file is also provided to practice using LaTeX with the goal of replicating it. 
+                You can access the handout and the target file <a href="https://github.com/SoraDonaldGoofy/Advanced-Cash-Register/tree/GUI" 
+                target="_blank" rel="noreferrer noopener">here.</a></h5>
+        </div>
+
+        <div class="tabcontent" id="MATLAB">
+            <h3>MATLAB</h3>
+            <h4>Capacitance Calculator</h4>
+            <h5>Created a program that calculates the capacitance of parallel, different sized discs. Different surface charge denisity values
+                were provided in multiple radii intervals. The total charge and electric potential were calculated via integration by constant addition.
+            </h5>
+        </div>
+
+        <div class="tabcontent" id="Teaching">
+            <h3>Teaching</h3>
+            
+            <h5>Worked together with <a href="https://directory.engr.wisc.edu/centers/Staff/Greene_Scott/" target="_blank" rel="noreferrer noopener">Professor Greene</a> as an In-Class Peer Coarch to assist students in answering
+             in-class exercises. The concepts introduced in class included 
+            <ul>Aliasing</ul>
+            <ul>AM modulation</ul>
+            <ul>LTI filters</ul>
+            <ul>Convolution</ul>
+            <ul>Frequency Response</ul>
+            <ul>DFT</ul>
+            <ul>MATLAB</ul>
+             <h5>Worked as a head tutor for <a href="https://engineering.wisc.edu/student-services/undergraduate-learning-center/" target="_blank" rel="noreferrer noopener">UW-Madison's Undergraduate Learning Center</a>. Tutored students
+            in group and private settings and ensured the smooth operation of nightly tutoring activity. Subjects tutored:
+            <ul>Computer Science</ul>
+            <ul>Computer Engineering</ul>
+            <ul>General Physics I and II</ul>
+            <ul>General Chemistry I</ul>
+            <ul>Calculus I, II, III</ul></h5>
+            <h5>Taught English to elementary students part time for one year and full time for six weeks. the basics of reading and phonetics, 
+                in addition to writing, speaking, and listening. Responsibilities included:
+            <ul>Creating lesson plans and summaries</ul>
+            <ul>Tracking student progress</ul>
+            <ul>Communicated with parents regarding student growth</ul>
+            <ul>Discussed teaching strategies with colleagues and managers</ul>
+        </h5>
+        </div>
+
+    </div>
+</div>
+
+<div class="gmail"><h2>Want to connect? Let's talk 
+    <a href="https://mail.google.com/mail/u/1/?view=cm&to=jason.sinaga19@gmail.com" target="_blank" rel="noreferrer noopener">here!</a></h2></div>
+
+    <script src="portfolioScript.js"></script>
+    </body>
+
+</html>
