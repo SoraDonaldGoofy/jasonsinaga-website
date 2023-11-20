@@ -156,7 +156,7 @@ a:not(:hover){
 
 .container .tabcontent{
     height: 85%;
-    width: 99.4%;
+    width: 100%;
     background-color: whitesmoke;
     color: white;
     padding-top: 20px;
