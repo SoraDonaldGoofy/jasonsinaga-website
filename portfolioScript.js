@@ -20,4 +20,4 @@ function openSkill(panelIndex, skill) {
     tabButtons[panelIndex].style.transition="0.2s";
 }
 
-openSkill(0, "SystemVerilog");
+openSkill(0, "Teaching");
